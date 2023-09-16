@@ -1,49 +1,45 @@
 ﻿<Properties StartupConfiguration="{C662D197-E24D-4F06-A132-8778205F3359}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EcommerceApi/Controllers/UserController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EcommerceApi/Models/User.cs">
     <Files>
-      <File FileName="EcommerceApi/Controllers/UserController.cs" Line="45" Column="10" />
-      <File FileName="EcommerceApi/Services/IUserService.cs" Line="11" Column="36" />
-      <File FileName="EcommerceApi/Models/User.cs" Line="22" Column="42" />
-      <File FileName="EcommerceApi/Data/EcomDbContext.cs" Line="12" Column="23" />
-      <File FileName="EcommerceApi/Repository/UserService.cs" Line="52" Column="1" />
-      <File FileName="EcommerceApi/Enums/AdminType.cs" Line="7" Column="21" />
-      <File FileName="EcommerceApi/Program.cs" Line="20" Column="4" />
-      <File FileName="EcommerceApi/Services/IAuthService.cs" Line="8" Column="27" />
-      <File FileName="EcommerceApi/Dto/Dto.cs" Line="21" Column="1" />
-      <File FileName="EcommerceApi/Repository/AuthService.cs" Line="29" Column="1" />
-      <File FileName="EcommerceApi/Controllers/AuthController.cs" Line="26" Column="1" />
-      <File FileName="EcommerceApi/Helper/MappingProfiles.cs" Line="12" Column="40" />
+      <File FileName="EcommerceApi/Repository/ProductService.cs" />
+      <File FileName="EcommerceApi/Services/IProductService.cs" />
+      <File FileName="EcommerceApi/Repository/UserService.cs" />
+      <File FileName="EcommerceApi/Repository/AuthService.cs" Line="82" Column="1" />
+      <File FileName="EcommerceApi/Abstract/IJwtUtils.cs" />
+      <File FileName="EcommerceApi/Helper/JwtUtil.cs" />
+      <File FileName="EcommerceApi/Services/IAuthService.cs" />
+      <File FileName="EcommerceApi/Controllers/UserController.cs" />
+      <File FileName="EcommerceApi/Controllers/AuthController.cs" />
+      <File FileName="EcommerceApi/Program.cs" />
+      <File FileName="EcommerceApi/Models/ProductCategory.cs" />
+      <File FileName="EcommerceApi/Data/EcomDbContext.cs" />
+      <File FileName="EcommerceApi/Models/ProductOwner.cs" />
+      <File FileName="EcommerceApi/Models/User.cs" Line="30" Column="5" />
+      <File FileName="EcommerceApi/Models/Product.cs" />
+      <File FileName="EcommerceApi/Dto/ProductDto.cs" />
+      <File FileName="EcommerceApi/Dto/RegisterDto.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EcommerceApi" expanded="True">
+          <Node name="EcommerceApi">
             <Node name="EcommerceApi" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
               </Node>
-              <Node name="Data" expanded="True" />
-              <Node name="Dto" expanded="True" />
-              <Node name="Enums" expanded="True" />
-              <Node name="Helper" expanded="True" />
-              <Node name="Models" expanded="True" />
               <Node name="Repository" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EcommerceApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.EcommerceApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

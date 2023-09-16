@@ -21,7 +21,11 @@ namespace EcommerceApi.Models
 
         public string Phone { get; set; }
 
-       
+        public string Token { get; set; }
+
+        public List<ProductOwner> ProductOwners { get; set; }
+
+
     }
 }   
 

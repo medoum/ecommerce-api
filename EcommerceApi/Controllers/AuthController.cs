@@ -1,4 +1,5 @@
 using AutoMapper;
+using EcommerceApi.Abstract;
 using EcommerceApi.Dto;
 using EcommerceApi.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -11,11 +12,13 @@ namespace EcommerceApi.Controllers
     {
         private readonly IAuthService _authService;
         private readonly IMapper _mapper;
+        private readonly IJwtUtils _jwtUtil;
 
-        public AuthController(IAuthService authService, IMapper mapper)
+        public AuthController(IAuthService authService, IMapper mapper, IJwtUtils jwtUtils)
         {
             _authService = authService;
             _mapper = mapper;
+            _jwtUtil = jwtUtils;
         }
 
         [HttpPost("register")]
@@ -25,9 +28,11 @@ namespace EcommerceApi.Controllers
                 return BadRequest();
 
             await _authService.RegisterUser(registerDto);
+            
 
             return Ok(new {
-                Message = "Utilisateur inscrit"
+                Message = "Utilisateur inscrit",
+           
             });
 
         }
@@ -46,16 +51,14 @@ namespace EcommerceApi.Controllers
              
                 return Unauthorized(new { Message = "Mot de passe ou email invalide" });
             }
-           
-            // Generate and return a JWT token upon successful authentication
 
-            //var token = GenerateJwtToken(user); // You'll need to implement this function
+            // Generate and return a JWT token upon successful authentication
 
 
             return Ok(new
             {
                 Message = "User logged in successfully",
-                //Token = token
+        
             });
         }
     }

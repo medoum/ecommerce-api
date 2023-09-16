@@ -1,5 +1,4 @@
-﻿using System;
-using EcommerceApi.Data;
+﻿using EcommerceApi.Data;
 using EcommerceApi.Models;
 using EcommerceApi.Services;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +8,7 @@ namespace EcommerceApi.Repository
 	public class UserService : IUserService
 	{
         private readonly EcomDbContext _dbContext;
+  
 
         public UserService(EcomDbContext dbContext)
         {
